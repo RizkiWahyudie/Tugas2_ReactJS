@@ -1,23 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import Header from "./Page/Header";
+import Footer from "./Page/Footer";
+import ListMenuUtama from "./ListData/ListMenuUtama";
+import MenuTentangKami from "./Page/MenuTentangKami";
+import MenuKontak from "./Page/MenuKontak";
+import MenuMakanan from "./Page/MenuMakanan";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+        <Header />
+        <ListMenuUtama linkImg = "https://s3-ap-southeast-1.amazonaws.com/niomic/img/sample/food1.jpg" />
+        <MenuMakanan />
+        <MenuTentangKami />
+        <MenuKontak />
+        <Footer />
     </div>
   );
 }
